@@ -7,17 +7,17 @@ export class Book {
   @prop({ type: String, required: true })
   title: string;
 
+  @prop({ type: Number, required: true })
+  pages: number;
+
   @prop({ type: String, required: true })
   authors: string;
 
   @prop({ type: String, required: true })
-  note: string;
+  description: string;
 
-  @prop({ type: String, required: true })
-  pages: string;
-
-  @prop({ type: String, required: true })
-  tags: string;
+  @prop({ type: Array, required: true })
+  tags: any;
 }
 export const bookModel = getModelForClass(Book);
 
