@@ -1,12 +1,19 @@
 import { Router } from "express";
 
-import { create, getBooks, update, remove } from "./controllers/books/index";
+import {
+  create,
+  getAll,
+  getOne,
+  update,
+  remove,
+} from "./controllers/books/index";
 
 const routes = Router();
 
 routes.post("/books", create);
-routes.get("/books", getBooks);
-routes.put("/books/:id", update);
-routes.delete("/books/:id", remove);
+routes.get("/books", getAll);
+routes.get("/books/:tag", getOne);
+routes.put("/books/:_id", update);
+routes.delete("/books/:_id", remove);
 
 export default routes;
