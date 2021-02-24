@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express';
 
-import { bookModel } from "../../models/bookModel";
+import { bookModel } from '../../models/bookModel';
 
 export const update = async (req: Request, res: Response) => {
   const { _id } = req.params;
@@ -10,7 +10,7 @@ export const update = async (req: Request, res: Response) => {
 
   //converting tags from Array
   let { tags } = req.body;
-  tags = tags.split(" ");
+  tags = tags.split(' ');
   req.body.tags = tags;
 
   try {

@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express';
 
-import { bookModel } from "../../models/bookModel";
+import { bookModel } from '../../models/bookModel';
 
 export const remove = async (req: Request, res: Response) => {
   const { _id } = req.params;

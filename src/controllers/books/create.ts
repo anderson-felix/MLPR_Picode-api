@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
-import * as yup from "yup";
+import { Request, Response } from 'express';
+import * as yup from 'yup';
 
-import { bookModel } from "../../models/bookModel";
+import { bookModel } from '../../models/bookModel';
 
 export const create = async (req: Request, res: Response) => {
   const schema = yup.object().shape({
@@ -19,7 +19,7 @@ export const create = async (req: Request, res: Response) => {
 
   let { title, pages, authors, description, tags } = req.body;
 
-  tags = tags.split(" ");
+  tags = tags.split(' ');
 
   const register = {
     title,

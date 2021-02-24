@@ -1,8 +1,8 @@
-import { prop, modelOptions, getModelForClass } from "@typegoose/typegoose";
+import { prop, modelOptions, getModelForClass } from '@typegoose/typegoose';
 
-import { db } from "../utils/db";
+import { db } from '../utils/db';
 
-@modelOptions({ schemaOptions: { collection: "books" } })
+@modelOptions({ schemaOptions: { collection: 'books' } })
 export class Book {
   @prop({ type: String, required: true })
   title: string;
