@@ -9,3 +9,5 @@ server.listen(3333);
 server.use(express.json());
 
 server.use(routes);
+
+export default server;
