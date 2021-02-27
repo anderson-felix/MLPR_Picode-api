@@ -1,5 +1,4 @@
 export * from './create';
-export * from './getAll';
-export * from './getOne';
+export * from './getBooks';
 export * from './update';
 export * from './remove';
