@@ -27,7 +27,7 @@ A rota <i>delete</i> `/books` recebe um registro por parâmetro e deleta esse re
 
 ## Validações
 
-Todas os endpoints são validados usando a biblioteca `yup`.da por criação.
+Todas os endpoints são validados usando a biblioteca `yup`.
 
 <br>
 
