@@ -19,7 +19,7 @@ export const create = async (req: Request, res: Response) => {
 
   let { title, pages, authors, description, tags } = req.body;
 
-  tags = tags.split(' ');
+  tags = tags.trim().split(' ');
 
   const register = {
     title,
